@@ -1,0 +1,153 @@
+/* container */
+.headerdiv {
+    height: 13%;
+    width: 100%;
+    top:0;
+    z-index: 99;
+    overflow: hidden;
+    position: absolute;
+    background-color: #6453533d
+}
+.imgbg {
+    height: 100%;
+    width: 100%;
+    filter: blur(15px);
+    position: absolute;
+}
+
+/* logoHeader */
+.logoContainer {
+    position: absolute;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.logo {
+    -webkit-transition: opacity 0.7s ease-out;
+    -moz-transition: opacity 0.7s ease-out;
+    -ms-transition: opacity 0.7s ease-out;
+    -o-transition: opacity 0.7s ease-out;
+    transition: opacity 0.7s ease-out;
+}
+.logo:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    
+}
+@media screen and (min-width: 601px) {
+    .logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 601px) {
+    .logoContainer {
+      height: 50%;
+      width: 10%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .logoContainer {
+        height: 50%;
+        width: 20%;
+    }
+}
+/* Language Flag */
+.flags {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    height:30%;
+    width: 3%;
+    right :0px;
+    margin-right: 10px;
+    top: 0px;
+    -webkit-transition: all 0.7s ease-out;
+       -moz-transition: all 0.7s ease-out;
+        -ms-transition: all 0.7s ease-out;
+         -o-transition: all 0.7s ease-out;
+            transition: all 0.7s ease-out;
+}
+.flags:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.flagsimg {
+    height: 100%;
+    width: 100%;
+}
+@media screen and (min-width: 601px) {
+    .flags {
+      width: 3%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .flags {
+        width: 5%;
+    }
+}
+.flags2 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    height:30%;
+    width: 3%;
+    right :0px;
+    margin-right: 100px;
+    top: 0px;
+    -webkit-transition: all 0.7s ease-out;
+       -moz-transition: all 0.7s ease-out;
+        -ms-transition: all 0.7s ease-out;
+         -o-transition: all 0.7s ease-out;
+            transition: all 0.7s ease-out;
+}
+.flags2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.flagsimg2{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (min-width: 601px) {
+    .flags2 {
+      width: 3%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .flags2 {
+        width: 5%;
+    }
+}
+
+/* translation */
+
+.transcss {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    top: 50%;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    font-family:serif;
+}
+@media screen and (min-width: 601px) {
+    .transcss {
+      font-size: 20px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .transcss {
+        font-size: 16px;
+    }
+}
