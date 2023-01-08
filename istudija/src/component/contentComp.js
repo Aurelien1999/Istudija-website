@@ -14,13 +14,13 @@ export default function ContentComp() {
     }       
 
     return (
-            <div style = {{height:"70%", width: width, backgroundColor: '#fff', overflow: "hidden"}}>
+            <div style = {{height:"100%", width: width, backgroundColor: '#121212', overflow: "hidden"}}>
 
-              <Link className="linkInt" to="/Blogs">
+              <Link className="linkInt" to="/interior">
                 <div className="divInt">
                   <img
                     alt="interior"
-                    src="https://i.pinimg.com/originals/00/89/cd/0089cd71c3c4278d19a54a9b0f2588c6.jpg"
+                    src="https://www.mymove.com/wp-content/uploads/2022/07/mm-things-you-should-know-about-becoming-an-interior-designer-hero.jpg"
                     className="imgInt"
                     >
                   </img>
@@ -35,11 +35,11 @@ export default function ContentComp() {
                 </div>
               </Link>
              
-              <Link className="linkGarden" to="/Contact">
+              <Link className="linkGarden" to="/garden">
                 <div className="divGarden">
                   <img
                     alt="garden"
-                    src="https://wallpaper.dog/large/17001144.jpg"
+                    src="https://images.squarespace-cdn.com/content/v1/5dea42a80d60bb6675fdb54c/1619182116698-VM8JQZATNHI2DWZB2RYY/alaster-anderson-garden-design-planting-installation-garden-lighting.jpg?format=2500w"
                     className="imgGarden"
                     ></img>
                     <div className="titleOnImage2">

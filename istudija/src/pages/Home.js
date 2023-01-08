@@ -1,6 +1,5 @@
 import Headercomp from '../component/headerComp';
 import ContentComp from '../component/contentComp';
-import ContactComp from '../component/contactComp';
 import useWindowDimensions from '../component/DimensionComp';
 
 

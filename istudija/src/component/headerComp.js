@@ -2,9 +2,10 @@ import React from "react";
 import useWindowDimensions from './DimensionComp';
 import { Trans, useTranslation} from 'react-i18next';
 import './headerComp.css'
-import Contact from "../pages/gardenCont";
 import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
+import "../assets/Alegreya-VariableFont_wght.ttf";
+
 
 export default function Headercomp() {
     const {t, i18n} = useTranslation()
@@ -16,10 +17,29 @@ export default function Headercomp() {
     }       
     return (
             <div className="headerdiv">
-                    <img
-                        src="https://www.koziel.fr/18894-pdt_1500/wall-of-roses-mural.jpg"
-                        className="imgbg"
-                    />
+                <div style = {{ top: "35%", right: "10%", width: "30%", position : "absolute", justifyContent: "space-between", display: "table"}}>
+                    <div className="titleG">
+                        <div className="divclick">
+                            <Link style = {{textDecoration: "none", color : "#FFF"}} to="/garden">
+                                <Trans i18nKey="description.titleimgGarden"/>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="titleG">
+                        <div className="divclick">
+                            <Link style = {{textDecoration: "none", color: "#FFF"}} to="/interior">
+                                <Trans i18nKey="description.titleimgInt"/>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="titleG">
+                        <div className="divclick">
+                            <Link style = {{textDecoration: "none", color : "#FFF"}} to="/">
+                                <Trans i18nKey="description.headercont"/>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                     <div className="flags" onClick={() => changeLanguage("en")}>
                         <img
                             alt="England"
@@ -31,10 +51,10 @@ export default function Headercomp() {
                         <img
                             alt="Russia"
                             src="http://purecatamphetamine.github.io/country-flag-icons/3x2/RU.svg"
-                            className="flagsimg2"
+                            className="flagsimg"
                         />
                     </div>
-                    {/* <img
+                    <img
                         alt="France"
                         src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
                         className="flags3"
@@ -45,7 +65,7 @@ export default function Headercomp() {
                         src="http://purecatamphetamine.github.io/country-flag-icons/3x2/LV.svg"
                         className="flags4"
                         onClick={() => changeLanguage("lv")}
-                    /> */}
+                    />
                     <Link className="logoContainer" to="/">
                         <img
                             src={logo}

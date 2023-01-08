@@ -1,18 +1,31 @@
+@font-face {
+    font-family: "Light";   /*Can be any text*/
+    src: local("PassionConflict-Regular"),
+      url("../assets/PassionsConflict-Regular.ttf") format("truetype");
+  }
+
 .containerCarr {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    bottom: 5%;
     background: rgba(0, 0, 0, 0);
     height: 100%;
     width: 400%;
-    overflow: hidden;
-    animation: mesImages 40s linear infinite;
+    animation: mesImages 30s linear infinite;
+}
+.titlecarr {
+    position: absolute;
+    font-size: 8rem;
+    color:rgb(255, 255, 255);
+    left: 50%;
+    padding-top: 200px;
+    transform: translate(-50%, -50%);
+    font-family: "Light";
+    text-shadow: 1px 1px 2px #000000;
 }
 .vrai {
     height: 100%;
     width: 200%;
-    background-color: "gold";
     display: flex;
 }
 .imagecarr {
@@ -29,18 +42,15 @@
     border: 2px solid #f1f1f1;
     transition: transform 1s;
     border-radius: 5px;
-    
 }
 
 .imagecarr:hover {
     cursor: pointer;
     transform: scale(1.1);
-    animation-play-state: paused;
 }
 .imagecarr2:hover {
     cursor: pointer;
     transform: scale(1.1);
-    animation-play-state: paused;
 }
 
 @keyframes mesImages {
@@ -53,7 +63,7 @@
     }
 }
 
-.imgbg {
+.img-bg {
     height: 100%;
     width: 100%;
     filter: blur(15px);
@@ -100,7 +110,6 @@ body.active-modal {
     border-radius: 50px;
     background: white;
     transform: translate(-50%, -50%);
-    transition: all 1s;
 }
 
 .close-modal:hover {

@@ -2,13 +2,15 @@ import useWindowDimensions from '../component/DimensionComp';
 import './intCont.css'
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
+import { Trans, useTranslation} from 'react-i18next';
 import 'aos/dist/aos.css';
-import Headercomp from '../component/headerComp';
+import "../assets/PassionsConflict-Regular.ttf";
 
 export default function IntCont(){
     const {height, width} = useWindowDimensions();
     const [mod, setmod] = useState(false);
     const [url, seturl] = useState("")
+    const {t, i18n} = useTranslation()
 
     useEffect(() => {
       AOS.init();
@@ -46,11 +48,13 @@ export default function IntCont(){
     }
     return (
       <div style = {{height: height, width:width, backgroundColor:"black", overflowX: "hidden"}}>
-         
           <img
             src="https://img.freepik.com/free-vector/watercolor-roses-wallpaper_79603-1168.jpg?w=2000"
-            className='imgbg'
+            className='img-bg'
             />
+        <div className='titlecarr'>
+           <Trans i18nKey="description.carr"/>
+        </div>
         <div className='vrai'>
           <div className='containerCarr'>
             <img
