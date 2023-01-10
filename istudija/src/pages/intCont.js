@@ -2,9 +2,9 @@ import useWindowDimensions from '../component/DimensionComp';
 import './intCont.css'
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
-import { Trans, useTranslation} from 'react-i18next';
 import 'aos/dist/aos.css';
-import "../assets/PassionsConflict-Regular.ttf";
+import { Trans, useTranslation} from 'react-i18next';
+import "../assets/Alegreya-VariableFont_wght.ttf"
 
 export default function IntCont(){
     const {height, width} = useWindowDimensions();

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Intfont";   /*Can be any text*/
+    src: local("Alegreya-VariableFont_wght-Regular"),
+      url("../assets/Alegreya-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "santa";   /*Can be any text*/
+    src: local("PassionConflict-Regular"),
+      url("../assets/PassionsConflict-Regular.ttf") format("truetype");
+}
+
+
+.imgmain{
+    height: 100%;
+    width: 100%;
+}
+
+.titleonImg {
+    position: absolute;
+    font-size: 12rem;
+    color:rgb(255, 255, 255);
+    left: 40%;
+    padding-top: 200px;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px #000000;
+    font-family: "santa";
+}
+.titleonImg2 {
+    position: absolute;
+    font-size: 2rem;
+    color:rgb(255, 255, 255);
+    left: 45%;
+    padding-top: 660px;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px #000000;
+    font-family: "Intfont"; 
+}
+.titleonImg3 {
+    position: absolute;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px #000000;
+}
