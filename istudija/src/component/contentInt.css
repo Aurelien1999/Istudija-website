@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "contint";   /*Can be any text*/
+    src: local("Alegreya-VariableFont_wght"),
+      url("../assets/Alegreya-VariableFont_wght.ttf") format("truetype");
+  }
+
+.divtopright {
+    position : absolute;
+    height: 50%;
+    width: 50%;
+    right: 0;
+}
+
+.titletopright {
+    width: 100%;
+    text-align : center;
+    font-family: "contint";
+}
+
+.contenttopright {
+    width: 60%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 20px;
+    font-family: "contint";
+}
+
+.divbottomright {
+    position :absolute;
+    height: 50%;
+    width: 50%;
+    right: 0;
+    margin-top: 25%;
+}
+
+.titlebottomright {
+    width: 100%;
+    text-align : center;
+    font-family: "contint";
+}
+
+.contentbottomright {
+    width: 60%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 20px;
+    font-family: "contint";
+}
+
+.divleft {
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 50%;
+    background-color:rgba(14, 12, 12, 0.829);
+}
+.titledivleft {
+    width: 100%;
+    color:white;
+    text-align : center;
+    font-family: "contint";
+}
+
+.contentdivleft {
+    width: 90%;
+    text-align: center;
+    margin-top: 5%;
+    color:white;
+    margin-left: 5%;
+    font-size: 16px;
+    font-family: "contint";
+}

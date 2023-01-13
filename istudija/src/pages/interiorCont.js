@@ -8,6 +8,7 @@ import Headercomp from "../component/headerComp";
 import AosProfileInt from "../component/aosProfileInt";
 import GalleryInt from "../component/galleryInt";
 import HeaderPageInt from "../component/headerPageInt";
+import ContentInt from "../component/contentInt";
 
 export default function InteriorCont() {
     const {t, i18n} = useTranslation()
@@ -21,6 +22,8 @@ export default function InteriorCont() {
                 <Headercomp/>
                 <HeaderPageInt/>
                 <AosProfileInt/>
+                <ContentInt/>
+                {/* <GalleryInt/> */}
                 <IntCont/>
                 <FooterComp/>
             </div>

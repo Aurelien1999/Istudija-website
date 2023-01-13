@@ -52,9 +52,9 @@ export default function IntCont(){
             src="https://img.freepik.com/free-vector/watercolor-roses-wallpaper_79603-1168.jpg?w=2000"
             className='img-bg'
             />
-        <div className='titlecarr'>
+        {/* <div className='titlecarr'>
            <Trans i18nKey="description.carr"/>
-        </div>
+        </div> */}
         <div className='vrai'>
           <div className='containerCarr'>
             <img

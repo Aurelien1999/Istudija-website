@@ -13,8 +13,10 @@ export default function GalleryInt() {
       i18n.changeLanguage(language)
     } 
     return (
-            <div>
-                <p>zae</p>
+            <div style = {{height: height, width: width, backgroundColor: 'grey'}}>
+              <Link to="../gallery">
+                <p style={{position:" absolute"}}>gallery</p>
+              </Link>
             </div>
         );
 }

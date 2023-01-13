@@ -9,6 +9,7 @@ import IntCont from "./pages/intCont";
 import GardenCont from "./pages/gardenCont";
 import NoPage from "./pages/NoPage";
 import InteriorCont from './pages/interiorCont';
+import Gallery from './pages/Gallery';
 
 function App() {
   const {t, i18n} = useTranslation()
@@ -24,6 +25,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="interior" element={<InteriorCont />} />
             <Route path="garden" element={<GardenCont />} />
+            <Route path="gallery" element={<Gallery />} />
             <Route path="*" element={<NoPage />} />
           {/* </Route> */}
         </Routes>
