@@ -1,3 +1,11 @@
+.menucontainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    background:#000000;
+}
+
 .linkInt {
     position: absolute;
     height: 100%;
@@ -5,13 +13,17 @@
 }
 
 .divInt {
-    height: 100%;
-    width: 100%;
-    transition: all 1s;
+    display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    transition: all 1s;
+}
+.imgInt {
+    align-self: flex-end;
+    height:87%;
+    width: 100%; 
+    transform: scale(0.99);
 }
 .linkGarden {
     position: absolute;
@@ -29,15 +41,6 @@
     overflow: hidden;
 }
 
-.imgInt {
-    height:87%;
-    width: 100%; 
-    position: absolute;
-    transform: scale(0.99);
-    bottom:0;
-    left:0;
-    margin-left: 1px;
-}
 
 .imgGarden {
     height:87%;
@@ -60,15 +63,7 @@
     cursor: pointer;
    
 }
-.buttonH {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all 0.2s ease;
-}
+
 .divGarden:hover + .btn-one, .btn-one:hover {
     top: 57%;
     display: inline-block;
@@ -181,4 +176,3 @@
     opacity: 0; 
     transform: scale(0.1, 1);
   }
-  

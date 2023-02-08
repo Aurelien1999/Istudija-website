@@ -17,63 +17,52 @@ export default function Headercomp() {
     }       
     return (
             <div className="headerdiv">
-                <div style = {{ top: "35%", right: "10%", width: "30%", position : "absolute", justifyContent: "space-between", display: "table"}}>
-                    <div className="titleG">
-                        <div className="divclick">
-                            <Link style = {{textDecoration: "none", color : "#FFF"}} to="/garden">
-                                <Trans i18nKey="description.titleimgGarden"/>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="titleG">
-                        <div className="divclick">
-                            <Link style = {{textDecoration: "none", color: "#FFF"}} to="/interior">
-                                <Trans i18nKey="description.titleimgInt"/>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="titleG">
-                        <div className="divclick">
-                            <Link style = {{textDecoration: "none", color : "#FFF"}} to="/">
-                                <Trans i18nKey="description.headercont"/>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                    <div className="flags" onClick={() => changeLanguage("en")}>
-                        <img
-                            alt="England"
-                            src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
-                            className="flagsimg"
-                            />
-                    </div>
-                    <div className="flags2" onClick={() => changeLanguage("ru")}>
-                        <img
-                            alt="Russia"
-                            src="http://purecatamphetamine.github.io/country-flag-icons/3x2/RU.svg"
-                            className="flagsimg"
-                        />
-                    </div>
+                <Link className="logoContainer" to="/">
                     <img
-                        alt="France"
-                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
-                        className="flags3"
-                        onClick={() => changeLanguage("fr")}
-                    />
+                        src={logo}
+                        alt="logo"
+                        className="logo"
+                        >
+                    </img>
+                </Link>
+                <div className="divheaderlink">
+                    <Link style={{textDecoration:"none"}} className="titleG" to="/garden">
+                        <Trans i18nKey="description.titleimgGarden"/>
+                    </Link>
+                    <Link style={{textDecoration:"none"}} className="titleG" to="/interior">
+                        <Trans i18nKey="description.titleimgInt"/>
+                    </Link>
+                    <Link style={{textDecoration:"none"}} className="titleG" to="/">
+                        <Trans i18nKey="description.headercont"/>
+                    </Link>
+                </div>
+                <div className="flag">
                     <img
                         alt="Latvija"
                         src="http://purecatamphetamine.github.io/country-flag-icons/3x2/LV.svg"
-                        className="flags4"
+                        className="flagimg"
                         onClick={() => changeLanguage("lv")}
                     />
-                    <Link className="logoContainer" to="/">
-                        <img
-                            src={logo}
-                            alt="logo"
-                            className="logo"
-                            >
-                        </img>
-                    </Link>
+                    <img
+                        alt="England"
+                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
+                        className="flagimg"
+                        onClick={() => changeLanguage("en")}
+                    />
+                    <img
+                        alt="Russia"
+                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/RU.svg"
+                        className="flagimg"
+                        onClick={() => changeLanguage("ru")}
+                    />
+                    <img
+                        alt="France"
+                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
+                        className="flagimg"
+                        onClick={() => changeLanguage("fr")}
+                    />
+                    
+                </div>
             </div>
         );
 }
