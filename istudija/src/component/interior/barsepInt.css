@@ -1,0 +1,25 @@
+.barsepdivint {
+    display: flex;
+    height: 10vh;
+    margin-top:13vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(73, 197, 139), rgb(31, 30, 37));
+
+}
+
+.barseptitle {
+    color: wheat;
+    font-size: 29px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+@media (max-width:720px) {
+    .barsepdivint {
+        margin-top: 10vh;
+    }
+    .barseptitle {
+        font-size: 25px;
+    }
+}

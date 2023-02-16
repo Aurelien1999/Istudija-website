@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Intfont";   /*Can be any text*/
+    src: local("Alegreya-VariableFont_wght-Regular"),
+      url("../../assets/Alegreya-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ivars";   /*Can be any text*/
+    src: local("Niconne-Regular"),
+      url("../../assets/Niconne-Regular.ttf") format("truetype");
+}
+
+.hpicontainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgmain{
+    height: 100%;
+    width: 100%;
+}
+
+.ivarsp {
+    position: absolute;
+    font-size: 11rem;
+    top:0;
+    height: 20%;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px #000000;
+    font-family: "ivars";
+}
+.ivarspbelow {
+    position: absolute;
+    font-size: 2rem;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px #000000;
+    font-family: "Intfont";
+    text-align: center;
+    width: 80%;
+}
+
+@media (max-width: 1280px) {
+    .ivarsp {
+        font-size: 9rem;
+    }
+    .ivarspbelow {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .ivarsp {
+        font-size: 7rem;
+    }
+    .ivarspbelow {
+        font-size: 1.2rem;
+    }
+}

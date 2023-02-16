@@ -1,5 +1,4 @@
 import React from "react";
-import useWindowDimensions from './DimensionComp';
 import { Trans, useTranslation} from 'react-i18next';
 import './headerComp.css'
 import { Link } from "react-router-dom";
@@ -9,7 +8,6 @@ import "../assets/Alegreya-VariableFont_wght.ttf";
 
 export default function Headercomp() {
     const {t, i18n} = useTranslation()
-    const {height, width} = useWindowDimensions();
     
     const changeLanguage = (language) => {
       i18n.changeLanguage(language)
@@ -26,42 +24,42 @@ export default function Headercomp() {
                     </img>
                 </Link>
                 <div className="divheaderlink">
-                    <Link style={{textDecoration:"none"}} className="titleG" to="/garden">
-                        <Trans i18nKey="description.titleimgGarden"/>
-                    </Link>
                     <Link style={{textDecoration:"none"}} className="titleG" to="/interior">
                         <Trans i18nKey="description.titleimgInt"/>
                     </Link>
-                    <Link style={{textDecoration:"none"}} className="titleG" to="/">
+                    <Link style={{textDecoration:"none"}} className="titleG" to="/garden">
+                        <Trans i18nKey="description.titleimgGarden"/>
+                    </Link>
+                    <Link style={{textDecoration:"none"}} className="titleG" to="/contact">
                         <Trans i18nKey="description.headercont"/>
                     </Link>
                 </div>
                 <div className="flag">
-                    <img
-                        alt="Latvija"
-                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/LV.svg"
-                        className="flagimg"
-                        onClick={() => changeLanguage("lv")}
-                    />
+                    <div className="flags">
+                        <img
+                            alt="Latvija"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/2560px-Flag_of_Latvia.svg.png"
+                            className="flagimg"
+                            onClick={() => changeLanguage("lv")}
+                            />
+                    </div>
+                    <div className="flags">
                     <img
                         alt="England"
-                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/2560px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
                         className="flagimg"
                         onClick={() => changeLanguage("en")}
                     />
-                    <img
-                        alt="Russia"
-                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/RU.svg"
-                        className="flagimg"
-                        onClick={() => changeLanguage("ru")}
-                    />
+                    </div>
+                   
+                    <div className="flags">
                     <img
                         alt="France"
-                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/2560px-Flag_of_France.svg.png"
                         className="flagimg"
                         onClick={() => changeLanguage("fr")}
                     />
-                    
+                    </div>
                 </div>
             </div>
         );

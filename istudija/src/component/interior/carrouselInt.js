@@ -1,20 +1,9 @@
-import useWindowDimensions from '../component/DimensionComp';
-import './intCont.css'
+import './carrouselInt.css'
 import { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Trans, useTranslation} from 'react-i18next';
-import "../assets/Alegreya-VariableFont_wght.ttf"
 
-export default function IntCont(){
-    const {height, width} = useWindowDimensions();
+export default function CarrouselInt(){
     const [mod, setmod] = useState(false);
     const [url, seturl] = useState("")
-    const {t, i18n} = useTranslation()
-
-    useEffect(() => {
-      AOS.init();
-    }, [])
 
     const toggleModal = ()=> {
       setmod(!mod);
@@ -47,14 +36,7 @@ export default function IntCont(){
       document.body.classList.remove('active-modal');
     }
     return (
-      <div style = {{height: height, width:width, backgroundColor:"black", overflowX: "hidden"}}>
-          <img
-            src="https://img.freepik.com/free-vector/watercolor-roses-wallpaper_79603-1168.jpg?w=2000"
-            className='img-bg'
-            />
-        {/* <div className='titlecarr'>
-           <Trans i18nKey="description.carr"/>
-        </div> */}
+      <div className='containerofdivcarr'>
         <div className='vrai'>
           <div className='containerCarr'>
             <img
@@ -122,7 +104,7 @@ export default function IntCont(){
               <button
                 className='close-modal'
                 onClick={toggleModal}>
-                  <p className='t-btn'>X</p>
+                  <p className='xofthebutton'>X</p>
               </button>
             </div>
           </div>

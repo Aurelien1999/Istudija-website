@@ -1,0 +1,149 @@
+.contactviewgar {
+    display: flex;
+    height :80vh;
+    width: 100vw;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    background-color: rgb(27, 43, 36);
+}
+
+.divfright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    height: 100%;
+    width: 50%;
+    background: rgb(12, 11, 11);
+}
+
+.divfleft{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.linkftoint {
+    display:flex;
+    justify-content: center;
+}
+
+.formright {
+    display: flex;
+    width: 80%;
+    height: 60%;
+    flex-flow: column wrap;
+}
+.labeltext {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: wheat;
+    
+}
+.inputcontact {
+    width: 50%;
+    border: 1px  solid rgb(122, 122, 231);
+    transition: all 0.2s ease;
+}
+.inputcontact:hover {
+    border: 3px solid rgb(49, 126, 115);
+}
+.inputmessage {
+    height: 40%;
+    padding-bottom: 10px;
+    border: 1px  solid rgb(122, 122, 231);
+    transition: all 0.2s ease;
+}
+.inputmessage:hover {
+    border: 3px solid rgb(49, 126, 115);
+}
+.contactusfooter {
+    color: wheat;
+    font-size: 20px;
+}
+.buttonsend {
+    align-self: flex-end;
+    margin-top: 10px;
+    width: 20%;
+    border: 1px  solid rgb(122, 122, 231);
+    transition: all 0.2s ease;
+}
+.buttonsend:hover {
+    border: 3px solid rgb(49, 126, 115);
+}
+
+.footerpabove {
+    font-size: 15px;
+    color :wheat;
+    width: 80%;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+.santapfooter {
+    font-size: 20px;
+    color :wheat;
+    width: 80%;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+.iconpfooter {
+    font-size: 15px;
+    color :wheat;
+    padding-left : 8px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.diviconfooter {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 5px;
+}
+
+@media (max-width: 1280px) {
+    .footerpabove {
+        font-size: 14px;
+    }
+    .iconpfooter {
+        font-size: 14px;
+    }
+    .santapfooter {
+        font-size: 18px;
+    }
+}
+@media (max-width: 720px) {
+    .contactviewgar {
+        height: 160vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divfleft {
+        height: 50%;
+        width: 100%;
+    }
+    .divfright {
+        height: 50%;
+        width: 100%;
+    }
+    .diviconfooter {
+        justify-content: center;
+    }
+    
+    .footerpabove {
+        width: 80%;
+        font-size: 13px;
+    }
+    .iconpfooter {
+        font-size: 12px;
+    }
+    .santapfooter {
+        width: 80%;
+        font-size: 18px;
+    }
+    .formright {
+        height: 85%;
+    }
+}

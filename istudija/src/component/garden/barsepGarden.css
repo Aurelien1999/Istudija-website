@@ -1,0 +1,14 @@
+.barsepdiv {
+    display: flex;
+    height: 10vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(192, 165, 46), rgb(47, 82, 39));
+}
+
+.barseptitle {
+    color: wheat;
+    font-size: 29px;
+    text-shadow: 1px 1px 2px #000;
+}
