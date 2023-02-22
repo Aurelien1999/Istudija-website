@@ -9,37 +9,32 @@
       url("../../assets/Niconne-Regular.ttf") format("truetype");
 }
 
-.hpicontainer {
+.hpicontainergar {
     display: flex;
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    min-height: 500px;
 }
 
-.imgmain{
+.imgmaingar{
     height: 100%;
     width: 100%;
+    filter: contrast(1.2);
+    object-fit: cover;
 }
 
 .ivarsp {
     position: absolute;
-    font-size: 11rem;
-    top:0;
-    height: 20%;
+    z-index: 1;
+    font-size: 100px;
     color:rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 1px 4px #000000;
     font-family: "ivars";
 }
-.ivarspbelow {
-    position: absolute;
-    font-size: 2rem;
-    color:rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px #000000;
-    font-family: "Intfont";
-    text-align: center;
-    width: 80%;
-}
+
 
 @media (max-width: 1280px) {
     .ivarsp {

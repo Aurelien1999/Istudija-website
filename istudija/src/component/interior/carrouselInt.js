@@ -1,32 +1,38 @@
 import './carrouselInt.css'
 import { useEffect, useState } from 'react';
+import carr1 from '../../assets/Int/carri1.jpg'
+import carr2 from '../../assets/Int/carri2.jpg'
+import carr3 from '../../assets/Int/carri3.jpg'
+import carr4 from '../../assets/Int/carri4.jpg'
+import carr5 from '../../assets/Int/carri5.jpg'
 
 export default function CarrouselInt(){
     const [mod, setmod] = useState(false);
-    const [url, seturl] = useState("")
+    const [url, seturl] = useState(0)
+    const list = [carr1, carr2, carr3, carr4, carr5];
 
     const toggleModal = ()=> {
       setmod(!mod);
     }
     const toggleModal1 = ()=> {
       setmod(!mod);
-      seturl("https://carlislehomes.com.au/assets/Uploads/8b2be161ec/Modern-Mediterranean.jpg");
+      seturl(0);
     }
     const toggleModal2 = ()=> {
       setmod(!mod);
-      seturl("http://cdn.home-designing.com/wp-content/uploads/2013/06/modern-neutral-living-room-4.jpg");
+      seturl(1);
     }
     const toggleModal3 = ()=> {
       setmod(!mod);
-      seturl("https://i.ytimg.com/vi/jz2mL0ortEE/maxresdefault.jpg");
+      seturl(2);
     }
     const toggleModal4 = ()=> {
       setmod(!mod);
-      seturl("https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg");
+      seturl(3);
     }
     const toggleModal5 = ()=> {
       setmod(!mod);
-      seturl("https://media.architecturaldigest.com/photos/57506662f77873823f7d164e/master/w_3200,h_2087,c_limit/0716-jamie-mccourt-malibu-home-1.jpg");
+      seturl(4);
     }
 
     if (mod) {
@@ -39,55 +45,55 @@ export default function CarrouselInt(){
       <div className='containerofdivcarr'>
         <div className='vrai'>
           <div className='containerCarr'>
-            <img
-              src="https://carlislehomes.com.au/assets/Uploads/8b2be161ec/Modern-Mediterranean.jpg"
+          <img
+              src={carr1}
               className='imagecarr'
               onClick={toggleModal1}
             />
             <img
-              src="http://cdn.home-designing.com/wp-content/uploads/2013/06/modern-neutral-living-room-4.jpg"
+              src={carr2}
               className='imagecarr2'
               onClick={toggleModal2}
             />
             <img
-              src="https://i.ytimg.com/vi/jz2mL0ortEE/maxresdefault.jpg"
+              src={carr3}
               className='imagecarr'
               onClick={toggleModal3}
             />
             <img
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg"
+              src={carr4}
               className='imagecarr2'
               onClick={toggleModal4}
               />
             <img
-              src="https://media.architecturaldigest.com/photos/57506662f77873823f7d164e/master/w_3200,h_2087,c_limit/0716-jamie-mccourt-malibu-home-1.jpg"
+              src={carr5}
               className='imagecarr'
               onClick={toggleModal5}
               />
           </div>
           <div className='containerCarr'>
             <img
-              src="https://carlislehomes.com.au/assets/Uploads/8b2be161ec/Modern-Mediterranean.jpg"
+              src={carr1}
               className='imagecarr'
               onClick={toggleModal1}
             />
             <img
-              src="http://cdn.home-designing.com/wp-content/uploads/2013/06/modern-neutral-living-room-4.jpg"
+              src={carr2}
               className='imagecarr2'
               onClick={toggleModal2}
               />
             <img
-              src="https://i.ytimg.com/vi/jz2mL0ortEE/maxresdefault.jpg"
+              src={carr3}
               className='imagecarr'
               onClick={toggleModal3}
               />
             <img
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg"
+              src={carr4}
               className='imagecarr2'
               onClick={toggleModal4}
               />
             <img
-              src="https://media.architecturaldigest.com/photos/57506662f77873823f7d164e/master/w_3200,h_2087,c_limit/0716-jamie-mccourt-malibu-home-1.jpg"
+              src={carr5}
               className='imagecarr'
               onClick={toggleModal5}
               />
@@ -98,7 +104,7 @@ export default function CarrouselInt(){
             <div className='overlay' onClick={toggleModal}></div>
             <div className='modal-content'>
               <img
-                src={url}
+                src={list[url]}
                 className='image-modal'
               />
               <button

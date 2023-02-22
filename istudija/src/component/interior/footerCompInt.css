@@ -4,7 +4,8 @@
     width: 100vw;
     flex-direction: row;
     overflow: hidden;
-    background-color: rgb(27, 43, 36);
+    background-color: rgb(49, 49, 49);
+    min-height: 500px;
 }
 
 .divfright{
@@ -14,7 +15,7 @@
     flex-flow: column wrap;
     height: 100%;
     width: 50%;
-    background: rgb(12, 11, 11);
+    background: rgb(26, 26, 26);
 }
 
 .divfleft{
@@ -30,6 +31,13 @@
     justify-content: center;
 }
 
+.divsocialalign {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
 .formright {
     display: flex;
     width: 80%;
@@ -103,6 +111,14 @@
     padding: 5px;
 }
 
+.soctest {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+.soctest:hover {
+    opacity: 0.5;
+}
 @media (max-width: 1280px) {
     .footerpabove {
         font-size: 14px;
@@ -114,11 +130,12 @@
         font-size: 18px;
     }
 }
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     .contactview {
         height: 160vh;
         flex-direction: column;
         align-items: center;
+        min-height: 1000px;
     }
     .divfleft {
         height: 50%;

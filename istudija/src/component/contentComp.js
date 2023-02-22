@@ -2,6 +2,9 @@ import React, {useEffect} from "react";
 import { Trans, useTranslation} from 'react-i18next';
 import './contentComp.css'
 import { Link } from "react-router-dom";
+import imggar from '../assets/Garden/carr3.JPG'
+import imgint from '../assets/Int/222.jpg'
+
 
 
 export default function ContentComp() {
@@ -17,7 +20,7 @@ export default function ContentComp() {
                   <Link className="menulink" to="./interior">
                     <img
                       alt="interior"
-                      src="https://www.mymove.com/wp-content/uploads/2022/07/mm-things-you-should-know-about-becoming-an-interior-designer-hero.jpg"
+                      src={imgint}
                       className="menuimg">
                     </img>
                     <p className="titleOnImage"><Trans i18nKey="description.titleimgInt"/></p>
@@ -27,15 +30,15 @@ export default function ContentComp() {
                   <Link className="menulink" to="./garden"> 
                     <img
                       alt="garden"
-                      src="https://images.squarespace-cdn.com/content/v1/5dea42a80d60bb6675fdb54c/1619182116698-VM8JQZATNHI2DWZB2RYY/alaster-anderson-garden-design-planting-installation-garden-lighting.jpg?format=2500w"
+                      src={imggar}
                       className="menuimg">
                     </img>
                     <p className="titleOnImage"><Trans i18nKey="description.titleimgGarden"/></p>
                   </Link>
                 </div>
-                  <div className="sentLB">
+                  {/* <div className="sentLB">
                     <Trans i18nKey="description.part3"/>
-                  </div>
+                  </div> */}
             </div>
         );
 }

@@ -45,16 +45,21 @@ export default function FooterCompGarden() {
                 <Link className="linkftoint" style = {{textDecoration:"none"}} to="../interior">
                   <p className="footerpabove"><Trans i18nKey="description.linkfootint"></Trans></p>
                 </Link>
-                <SocialIcon url="https://www.facebook.com/ISTUDIJA/"/>
                 <p className="footerpabove"><Trans i18nKey="description.footinter"></Trans></p>
                 <p className="santapfooter">Ivars Stirna</p>
+                <p className="reqp">SIA I Studija</p>
+                <p className="reqp">Reģistrācijas nr.: LV40003653293</p>
+                <p className="reqp">Juridiskā adrese: Marsa Gatve 2-54, Rīga, LV -1082</p>
+                <p className="reqp">Banka: Swedbank AS</p>
+                <p className="reqp">Bankas kods: HABA LV22</p>
+                <p className="reqp">Konta nr.: LV 16 HABA 0551014430225</p>
                 <div className="diviconfooter">
                   <FaEnvelope color="wheat"/>
                   <p className="iconpfooter">stirnaivars@gmail.com</p>
                 </div>
                 <div className="diviconfooter">
                   <FaPhone color="green"/>
-                  <p className="iconpfooter">+371 26 551 998</p>
+                  <a className="iconpfooter" href="tel:+371 26 551 998">+371 26 551 998</a>
                 </div>
               </div>
             </div>

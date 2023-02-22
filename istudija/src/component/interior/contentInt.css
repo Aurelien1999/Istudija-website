@@ -1,42 +1,96 @@
-@font-face {
-    font-family: "contint";
-    src: local("Alegreya-VariableFont_wght"),
-      url("../../assets/Alegreya-VariableFont_wght.ttf") format("truetype");
-  }
-
 .containercontentint {
     display: flex;
-    flex-flow: column wrap;
-    height: 100vh;
+    flex-flow: column;
+    overflow: hidden;
+    height: 120vh;
     width: 100vw;
+    min-height: 700px;
 }
 
 .containerdivcontentint {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 120vh;
     width: 100vw;
 }
 
 .divcontentintr {
     display: flex;
-    height: 80vh;
+    height: 120vh;
     width: 50vw;
+    background: white;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: yellow;
+    min-height: 700px;
+
 }
 .divcontentintl {
     display: flex;
-    height: 80vh;
+    height: 120vh;
     width: 50vw;
+    background: white;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: rgb(12, 6, 97);
+    min-height: 700px;
 }
-.divcontentintb {
+
+.divfortextoffer {
     display: flex;
-    height: 20vh;
-    width: 100vw;
-    background: rgb(65, 238, 12);
+    height: 120vh;
+    width: 50%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.titleleftcontentint {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contentinttextpara {
+    width: 80%;
+    font-size: 17px;
+}
+@media (max-width:1280px) {
+    .containercontentint {
+        display: flex;
+        flex-flow: column;
+        height: 240vh;
+        width: 100vw;
+        min-height: 1400px;
+    }
+    .containerdivcontentint {
+        flex-direction: column;
+        height: 220vh;
+    }
+    .divcontentintr {
+        height: 120vh;
+        width: 100vw;
+    }
+    .divcontentintl {
+        height: 100vh;
+        width: 100vw;
+    }
+    .divfortextoffer {
+        width: 90%;
+        font-size: 15px;
+    }
+    .contentinttextpara {
+        font-size: 18px;
+    }
+}
+@media (max-width:720px) {
+    .contentinttextpara {
+        font-size: 15px;
+    }
+    .divfortextoffer {
+        width: 90%;
+        font-size: 14px;
+    }
 }

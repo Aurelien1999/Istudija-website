@@ -45,7 +45,10 @@ export default function FooterCompInt() {
                 <Link className="linkftogarden" style = {{textDecoration:"none"}} to="../garden">
                   <p className="footerpabove"><Trans i18nKey="description.linkfootgar"></Trans></p>
                 </Link>
-                <SocialIcon url="https://www.facebook.com/ISTUDIJA/"/>
+                <div className="divsocialalign">
+                  <SocialIcon className="soctest" style = {{marginRight: "10px"}} url="https://www.facebook.com/ISTUDIJA/"/>
+                  <SocialIcon className="soctest" url="https://instagram.com/i_studija/"/>
+                </div>
                 <p className="footerpabove"><Trans i18nKey="description.footinter"></Trans></p>
                 <p className="santapfooter">Santa Birze Stirna</p>
                 <div className="diviconfooter">
@@ -54,7 +57,7 @@ export default function FooterCompInt() {
                 </div>
                 <div className="diviconfooter">
                   <FaPhone color="green"/>
-                  <p className="iconpfooter">+371 29 212 585</p>
+                  <a className="iconpfooter" href="tel:+371 29 212 585">+371 29 212 585</a>
                 </div>
               </div>
             </div>

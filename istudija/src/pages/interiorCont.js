@@ -2,7 +2,6 @@ import React from "react";
 import './interiorCont.css'
 import Headercomp from "../component/headerComp";
 import AosProfileInt from "../component/interior/aosProfileInt";
-import GalleryInt from "../component/interior/galleryInt";
 import HeaderPageInt from "../component/interior/headerPageInt";
 import ContentInt from "../component/interior/contentInt";
 import CarrouselInt from "../component/interior/carrouselInt";

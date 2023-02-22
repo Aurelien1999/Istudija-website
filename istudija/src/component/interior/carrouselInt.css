@@ -1,13 +1,9 @@
-@font-face {
-    font-family: "Light";
-    src: local("Alegreya-VariableFont_wght"),
-      url("../../assets/Alegreya-VariableFont_wght.ttf") format("truetype");
-  }
 .containerofdivcarr {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(73, 197, 139), rgb(31, 30, 37));
+    background: rgb(49, 49, 49);
     overflow: hidden;
+    min-height: 500px;
 }
 .containerCarr {
     display:flex;
@@ -15,26 +11,30 @@
     align-items: center;
     height: 100vh;
     width: 400vw;
-    animation: mesImages 30s linear infinite;
+    min-height: 500px;
+    animation: mesImages 33s linear infinite;
 }
 
 .vrai {
     height: 100vh;
-    width: 200vw;
+    width: 250vw;
+    min-height: 500px;
     display: flex;
 }
 .imagecarr {
-    height: 40vh;
-    width:15vw;
+    height: 45vh;
+    width:17vw;
+    min-height: 200px;
     transition: transform 1s;
-    border: 4px solid #f1f1f1;
+    border: 2px solid #9c8787;
     border-radius: 5px;
 }
 
 .imagecarr2 {
-    height: 30vh;
-    width: 20vw;
-    border: 2px solid #f1f1f1;
+    height: 33vh;
+    width: 24vw;
+    min-height: 150px;
+    border: 2px solid #9c8787;
     transition: transform 1s;
     border-radius: 5px;
 }
@@ -99,10 +99,17 @@ body.active-modal {
     position: absolute;
     height: 50px;
     width:50px;
+    border : transparent;
+    margin: 5px;
     border-radius: 30px;
-    background: rgba(235, 55, 55, 0.856);
+    background: rgba(56, 51, 51, 0.856);
+    transition: all 1s ease-in-out;
 }
 
+.close-modal:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
 .xofthebutton {
     color: wheat;
     text-shadow: 1px 1px 2px #000;

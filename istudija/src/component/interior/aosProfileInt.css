@@ -1,15 +1,10 @@
-@font-face {
-    font-family: "text";   /*Can be any text*/
-    src: local("Alegreya-VariableFont_wght"),
-      url("../../assets/Alegreya-VariableFont_wght.ttf") format("truetype");
-  }
-
 .profilecontainer {
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    min-height: 500px;
 }
 .titlediv{
     width: 70%;
@@ -19,7 +14,6 @@
     position: absolute;
     font-size: 40px;
     color: #121212;
-    font-family: "text";
     z-index: 1;
 }
 .imgbg2 {
@@ -29,6 +23,7 @@
     filter: blur(7px);
     position: absolute;
     z-index: -1;
+    min-height: 500px;
     animation : bgimg 3s alternate infinite;
 }
 

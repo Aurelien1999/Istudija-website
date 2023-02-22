@@ -4,11 +4,21 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgb(192, 165, 46), rgb(47, 82, 39));
+    background : #1f3327;
+    min-height: 100px;
 }
 
 .barseptitle {
     color: wheat;
     font-size: 29px;
     text-shadow: 1px 1px 2px #000;
+}
+
+@media (max-width:720px) {
+    .barsepdivint {
+        margin-top: 10vh;
+    }
+    .barseptitle {
+        font-size: 25px;
+    }
 }

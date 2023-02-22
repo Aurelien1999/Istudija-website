@@ -1,19 +1,21 @@
 import React, {useEffect} from "react";
 import { Trans, useTranslation} from 'react-i18next';
 import './headerPageInt.css'
+import imgint from '../../assets/Int/222.jpg'
+
+
 
 export default function HeaderPageInt() {
 
     return (
-            <div className="hpicontainer">
+            <div className="hpicontainerint">
+                <div className="santap"><p>Santa</p></div>
                 <img
                     alt="interior"
-                    className="imgmain"
-                    src="https://www.mymove.com/wp-content/uploads/2022/07/mm-things-you-should-know-about-becoming-an-interior-designer-hero.jpg"
+                    className="imgmainint"
+                    src={imgint}
                     >
                 </img>
-                <p className="santap">Santa</p>
-                <p className="santapbelow"><Trans i18nKey="description.titleheader"/></p>
             </div>
         );
 }
